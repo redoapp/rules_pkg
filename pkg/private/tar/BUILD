@@ -44,6 +44,7 @@ exports_files(
 
 py_binary(
     name = "build_tar",
+    imports = ["../../.."],
     srcs = ["build_tar.py"],
     python_version = "PY3",
     srcs_version = "PY3",
@@ -59,6 +60,7 @@ py_binary(
 
 py_library(
     name = "tar_writer",
+    imports = ["../../.."],
     srcs = [
         "tar_writer.py",
     ],

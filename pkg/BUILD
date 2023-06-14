@@ -67,6 +67,7 @@ starlark_library(
 py_binary(
     name = "make_rpm",
     srcs = ["make_rpm.py"],
+    imports = [".."],
     python_version = "PY3",
     srcs_version = "PY3",
     target_compatible_with = select({
@@ -84,6 +85,7 @@ py_library(
     name = "make_rpm_lib",
     srcs = ["make_rpm.py"],
     srcs_version = "PY3",
+    imports = [".."],
     visibility = [
         "//experimental:__subpackages__",
         "//tests:__subpackages__",
@@ -97,6 +99,7 @@ py_library(
 py_binary(
     name = "filter_directory",
     srcs = ["filter_directory.py"],
+    imports = [".."],
     python_version = "PY3",
     visibility = ["//visibility:public"],
 )

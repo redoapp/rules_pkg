@@ -62,6 +62,7 @@ config_setting(
 
 py_library(
     name = "build_info",
+    imports = ["../.."],
     srcs = [
         "build_info.py",
     ],
@@ -74,6 +75,7 @@ py_library(
 
 py_library(
     name = "archive",
+    imports = ["../.."],
     srcs = [
         "__init__.py",
         "archive.py",
@@ -87,6 +89,7 @@ py_library(
 
 py_library(
     name = "helpers",
+    imports = ["../.."],
     srcs = [
         "__init__.py",
         "helpers.py",
@@ -100,6 +103,7 @@ py_library(
 
 py_library(
     name = "manifest",
+    imports = ["../.."],
     srcs = ["manifest.py"],
     srcs_version = "PY3",
     visibility = ["//visibility:public"],

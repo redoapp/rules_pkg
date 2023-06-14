@@ -48,6 +48,7 @@ exports_files(
 py_binary(
     name = "make_deb",
     srcs = ["make_deb.py"],
+    imports = ["../.."],
     python_version = "PY3",
     visibility = ["//visibility:public"],
     deps = [
@@ -57,6 +58,7 @@ py_binary(
 
 py_library(
     name = "make_deb_lib",
+    imports = ["../.."],
     srcs = ["make_deb.py"],
     srcs_version = "PY3",
     visibility = ["//tests/deb:__pkg__"],
